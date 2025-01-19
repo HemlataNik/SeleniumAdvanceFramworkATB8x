@@ -1,5 +1,4 @@
-package com.thetestingacademy.tests.vwoLogin;
-
+package com.thetestingacademy.tests.vwoLogin.pageObjectModel_TestCase;
 import com.thetestingacademy.base.CommonToAllTest;
 import com.thetestingacademy.driver.DriverManager;
 import com.thetestingacademy.pages.pageObjectModel.vwo.DashboardPage_POM;
@@ -41,7 +40,5 @@ public class TestVWOLogin_POM extends CommonToAllTest {
 
         assertThat(loggedInUserName).isNotBlank().isNotNull().isNotEmpty();
         Assert.assertEquals(loggedInUserName, PropertiesReader.readKey("expected_username"));
-
-
     }
 }

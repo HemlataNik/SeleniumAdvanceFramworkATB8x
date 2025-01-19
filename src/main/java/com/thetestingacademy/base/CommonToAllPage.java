@@ -1,5 +1,4 @@
 package com.thetestingacademy.base;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -28,6 +27,10 @@ public class CommonToAllPage {
 
     public void enterInput(By by, String key) {
         getDriver().findElement(by).sendKeys(key);
+    }
+
+    public void enterInput(WebElement by, String key) {
+        by.sendKeys(key);
     }
 
     public void getText(By by){
